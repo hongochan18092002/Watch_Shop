@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" type="image/png" href="./assets/img/wristwatch.png"/>
+    <title>Bài viết - Watch Shop</title>
+
+    <!-- css -->
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/responsive.css">
+
+    <!-- library -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <link rel="stylesheet" href="./assets/fonts/fontawesome-free-5.15.3-web/css/all.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@500&display=swap" rel="stylesheet">
+</head>
+<body>
+    <main class="main">
+        <header class="header-subpages" id="head">
+            <div class="header__topbar">
+                <div class="grid wide">
+                    <div class="header__topbar__container">
+                        <div class="row">
+                            <div class="l-3 m-3 c-3">
+                                <div class="header__topbar__container--contacts" data-aos="fade-right" data-aos-delay="200">
+                                    <span>+84 355 176 940</span>
+                                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                                    <a href="#"><i class="fab fa-twitter"></i></a>
+                                    <a href="#"><i class="fa fa-instagram"></i></a>
+                                </div>
+                            </div>
+                            <div class="l-3 m-1 c-1">
+                                <ul class="header__topbar__container--register" data-aos="fade-left" data-aos-delay="200">
+                                    <a href="login-form.html">
+                                        <li>Login</li>
+                                    </a>   
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <nav class="header__nav">
+                <div class="header__nav__container">
+                    <div class="grid wide">
+                        <div class="row" data-aos="fade-up" data-aos-delay="200">   
+                            <div class="l-1 m-2 c-3">
+                                <label for="nav-mobile-input">
+                                    <i class="fa fa-bars list-tablet-mobile "  aria-hidden="true" ></i>
+                                </label>
+                                <a href="index.html" >
+                                    <div class="header__nav__container--logo">  
+                                        WATCH<span style="color: #fa9e1b;">SHOP</span>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="l-3 hide-on-tablet_mobile">
+                                <ul class="header__nav__container--list">
+                                    <li ><a href="index.html">TRANG CHỦ</a></li>
+                                    <li >
+                                        <a href="introduce.html">GIỚI THIỆU</a>
+                                    </li>
+                                    <li  class="dropdown">
+                                        <a href="product.html">SẢM PHẨM</a>
+                                        <ul class="nav-dropdown">
+                                            <li><a href="#male">Đồng hồ nam</a></li>
+                                            <li><a href="#female">Đồng hồ nữ</a></li>
+                                            <li><a href="#couple">Đồng hồ đôi</a></li>
+                                            <li><a href="#accessories">Phụ kiện</a></li>                                  
+                                        </ul>
+                                    </li>
+                                    <li class="active">
+                                        <a href="blogs.html">BLOGS</a>
+                                    </li>
+                                    <li><a href="contact.html">LIÊN HỆ</a></li>
+                                </ul>
+                            </div>                  
+                            <div class="l-1 m-2 c-1">
+                                <div class="header__nav__container--search">
+                                    <a href="cart.html"><i class="fas fa-shopping-cart header__nav-cart-icon"></i></a>
+                                    <i class="fas fa-search" id="search"></i><br>
+                                    <input type="text" placeholder="Search...">
+                                </div>
+                            </div>
+                            <input type="checkbox" hidden class="nav-input" id="nav-mobile-input">
+                            <label for="nav-mobile-input" class="overlay"></label>
+                            <div class="nav-mobile">
+                                <label for="nav-mobile-input" class="nav-mobile-close">
+                                    <i class="fa fa-times-circle" aria-hidden="true"></i>
+                                </label>
+                                <ul class="nav-mobile-list">
+                                    <li>
+                                        <a href="index.html" class="nav-mobile-link">Trang chủ</a>
+                                    </li>
+                                    <li>
+                                        <a href="introduce.html" class="nav-mobile-link">Giới thiệu</a>
+                                    </li>
+                                    <li>
+                                        <a href="#male" class="nav-mobile-link">Đồng hồ nam</a>
+                                    </li>
+                                    <li>
+                                        <a href="#female" class="nav-mobile-link">Đồng hồ nữ</a>
+                                    </li>
+                                    <li>
+                                        <a href="#couple" class="nav-mobile-link">Đồng hồ đôi</a>
+                                    </li>
+                                    <li>
+                                        <a href="#accessories" class="nav-mobile-link">Phụ kiện</a>
+                                    </li>
+                                    <li>
+                                        <a href="blogs.html" class="nav-mobile-link">Blogs</a>
+                                    </li>
+                                    <li>
+                                        <a href="contact.html" class="nav-mobile-link">Liên hệ</a>
+                                    </li>
+                                </ul>
+                            </div> 
+                        </div>
+                    </div>
+                </div>
+            </nav>          
+        </header>
+        <div class="content-introduce" style="padding-bottom: 30px;">
+            <div data-aos="fade-up" data-aos-delay="100px" data-aos-time="1000">
+                <h3><a href="index.html">Trang chủ</a> <i class="fa fa-angle-double-right" aria-hidden="true"></i> <a href="#head" style="color: #fa9e1b;">Bài viết</a></h3>
+            </div>
+        </div>
+        <section class="information" id="infomation">
+            <article>
+                <div class="grid wide">
+                    <div class="row">
+                        <div class="col l-2 m-2 c-4" style="padding-top: 50px;">
+                            <a href="blogs.html">
+                                <div class="information-content" data-aos="flip-up" data-aos-delay="100">
+                                    <img src="./assets/img/Blogs/Blog1.jpg" alt="">
+                                    <div class="information-text">
+                                        <div class="information-text__heading">Chiếc đồng hồ của những CEO quyền lực nhất thế giới</div>
+                                        <ul>
+                                            <li>
+                                                <i class="fas fa-user-alt "></i> Mac Doe
+                                            </li>
+                                            <li>
+                                                <i class="fas fa-calendar-alt "></i>Aug 5, 2016
+                                            </li>
+                                            <li>
+                                                <i class="fas fa-comments "></i>3
+                                            </li>
+                                        </ul>
+                                        <p>Đối với một số doanh nhân, một chiếc đồng hồ đeo tay không chỉ là thiết bị xem giờ. Thực tế, nó là một thông điệp...</p>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col l-2 m-2 c-4" style="padding-top: 50px;">
+                            <a href="blogs.html">
+                                <div class="information-content" data-aos="flip-up" data-aos-delay="300">
+                                    <img src="./assets/img/Blogs/Blog6.jpg" alt="">
+                                    <div class="information-text">
+                                        <div class="information-text__heading">6 chiếc đồng hồ ấn tượng tại Oscar 2019: Từ những thương hiệu đình đám với cái giá “cắt cổ”</div>
+                                        <ul>
+                                            <li>
+                                                <i class="fas fa-user-alt "></i> Mac Doe
+                                            </li>
+                                            <li>
+                                                <i class="fas fa-calendar-alt "></i>Aug 5, 2016
+                                            </li>
+                                            <li>
+                                                <i class="fas fa-comments "></i>3
+                                            </li>
+                                        </ul>
+                                        <p>Oscar là giải thưởng danh giá của Viện hàn lâm dành cho những bộ phim tuyệt vời nhất trong năm qua...</p>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>   
+                        <div class="col l-2 m-2 c-4" style="padding-top: 50px;">
+                            <a href="blogs.html">
+                                <div class="information-content" data-aos="flip-up" data-aos-delay="500">
+                                    <img src="./assets/img/Blogs/Blog5.jpg" alt="">
+                                    <div class="information-text">
+                                        <div class="information-text__heading">12 chiếc đồng hồ dành cho nữ giới đắt giá nhất mọi thời đại</div>
+                                        <ul>
+                                            <li>
+                                                <i class="fas fa-user-alt "></i> Mac Doe
+                                            </li>
+                                            <li>
+                                                <i class="fas fa-calendar-alt "></i>Aug 5, 2016
+                                            </li>
+                                            <li>
+                                                <i class="fas fa-comments "></i>3
+                                            </li>
+                                        </ul>
+                                        <p>Sự nổi tiếng của những thương hiệu đồng hồ nữ không phải là nhất thời và nó cũng sẽ không xảy ra nếu không...</p>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>   
+                        <div class="col l-2 m-2 c-4" style="padding-top: 50px;">
+                            <a href="blogs.html">
+                                <div class="information-content" data-aos="flip-up" data-aos-delay="100">
+                                    <img src="./assets/img/Blogs/Blog2.jpg" alt="">
+                                    <div class="information-text">
+                                        <div class="information-text__heading">10 thương hiệu đồng hồ cao cấp hàng đầu mọi quý ông đều quan tâm, Rolex xếp hạng số 3</div>
+                                        <ul>
+                                            <li>
+                                                <i class="fas fa-user-alt "></i> Mac Doe
+                                            </li>
+                                            <li>
+                                                <i class="fas fa-calendar-alt "></i>Aug 5, 2016
+                                            </li>
+                                            <li>
+                                                <i class="fas fa-comments "></i>3
+                                            </li>
+                                        </ul>
+                                        <p>Đối với một số doanh nhân, một chiếc đồng hồ đeo tay không chỉ là thiết bị xem giờ. Thực tế, nó là một thông điệp...</p>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col l-2 m-2 c-4" style="padding-top: 50px;">
+                            <a href="blogs.html">
+                                <div class="information-content" data-aos="flip-up" data-aos-delay="300">
+                                    <img src="./assets/img/Blogs/Blog3.jpg" alt="">
+                                    <div class="information-text">
+                                        <div class="information-text__heading">6 chiếc đồng hồ ấn tượng tại Oscar 2019: Từ những thương hiệu đình đám với cái giá “cắt cổ”</div>
+                                        <ul>
+                                            <li>
+                                                <i class="fas fa-user-alt "></i> Mac Doe
+                                            </li>
+                                            <li>
+                                                <i class="fas fa-calendar-alt "></i>Aug 5, 2016
+                                            </li>
+                                            <li>
+                                                <i class="fas fa-comments "></i>3
+                                            </li>
+                                        </ul>
+                                        <p>Oscar là giải thưởng danh giá của Viện hàn lâm dành cho những bộ phim tuyệt vời nhất trong năm qua...</p>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>   
+                        <div class="col l-2 m-2 c-4" style="padding-top: 50px;">
+                            <a href="blogs.html">
+                                <div class="information-content" data-aos="flip-up" data-aos-delay="500">
+                                    <img src="./assets/img/Blogs/Blog4.jpg" alt="">
+                                    <div class="information-text">
+                                        <div class="information-text__heading">Casio sẽ ra mắt đồng hồ thông minh thương hiệu G-Shock để cạnh tranh với Apple Watch?</div>
+                                        <ul>
+                                            <li>
+                                                <i class="fas fa-user-alt "></i> Mac Doe
+                                            </li>
+                                            <li>
+                                                <i class="fas fa-calendar-alt "></i>Aug 5, 2016
+                                            </li>
+                                            <li>
+                                                <i class="fas fa-comments "></i>3
+                                            </li>
+                                        </ul>
+                                        <p>Có tin Casio dự định trình làng smartwatch G-Shock trong vòng 2 năm tới...</p>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>    
+                    </div>                   
+                </div>
+            </article>
+        </section><br><br>
+            
+
+        <!-- Footer -->
+
+
+        <footer class="footer">
+            <div class="footer__container">
+                <div class="grid wide">
+                    <div class="row" >
+                        <div class="col l-1 m-2 c-2">
+                            <div class="footer__container__contact" data-aos="fade-up" data-aos-delay="100">
+                                <h2>Thông tin liên hệ</h2>
+                                <p style="color: #fff; line-height: 2rem;">
+                                    <i class="fa fa-map-marker" aria-hidden="true" style="color: #fa9e1b;"></i>
+                                    137 Nguyễn Thị Thập, Phường Hòa <br> Minh, Quận Liên Chiểu, TP Đà Nẵng <br>
+                                    <i class="fa fa-phone" aria-hidden="true" style="color: #fa9e1b;"></i>
+                                    0355176940 <br>
+                                    <i class="fa fa-envelope" aria-hidden="true" style="color: #fa9e1b;"></i>
+                                    hanhnpd04488@fpt.edu.vn <br>
+                                    <i class="fa fa-facebook-official" aria-hidden="true" style="color: #fa9e1b;"></i>
+                                    Hồ Ngọc Hân
+                                </p><br>
+                                <div class="btn-footer">
+                                    <button class="btn-footer" style="width: 40px; height: 40px; border-radius: 50px; background-color: #2d2c2c; border: 1px solid #fa9e1b;"><i class="fa fa-facebook" aria-hidden="true" style="color: #fa9e1b;"></i></button>
+                                    <button class="btn-footer" style="width: 40px; height: 40px; border-radius: 50px; background-color: #2d2c2c; border: 1px solid #fa9e1b; margin-left: 7px;"><i class="fa fa-google" aria-hidden="true" style="color: #fa9e1b;"></i></button>
+                                    <button class="btn-footer" style="width: 40px; height: 40px; border-radius: 50px; background-color: #2d2c2c; border: 1px solid #fa9e1b; margin-left: 7px;"><i class="fa fa-twitter" aria-hidden="true" style="color: #fa9e1b;"></i></button>
+                                    <button class="btn-footer" style="width: 40px; height: 40px; border-radius: 50px; background-color: #2d2c2c; border: 1px solid #fa9e1b; margin-left: 7px;"><i class="fa fa-instagram" aria-hidden="true" style="color: #fa9e1b;"></i></button>
+                                </div><br><br>          
+                            </div>
+                        </div>
+                        <div class="col l-1 m-2 c-2">
+                            <div class="footer__container__link" data-aos="fade-up" data-aos-delay="300">
+                                <h2>Liên kết</h2>
+                                <a href="introduce.html">Giới Thiệu</a><br>
+                                <a href="product.html">Sản phẩm</a><br>
+                                <a href="blogs.html">Blogs</a><br>
+                                <a href="contact.html">Liên hệ</a><br>
+                            </div>
+                        </div>
+                        <div class="col l-1 m-2 c-2">
+                            <div class="footer__container__support" data-aos="fade-up" data-aos-delay="500">
+                                <h2>Hỗ trợ</h2>
+                                <a href="#">Hướng dẫn mua hàng</a><br>
+                                <a href="#">Hướng dẫn thanh toán</a><br>
+                                <a href="#">Chính sách bảo hành</a><br>
+                                <a href="#">Chính sách đổi trả</a><br>
+                                <a href="#">Tư vấn khách hàng</a><br>     
+                            </div>
+                        </div>
+                        <div class="col l-1 m-2 c-2">
+                            <div class="footer__container__download" data-aos="fade-up" data-aos-delay="700">
+                                <h2>Tải ứng dụng trên</h2>
+                                <p>Ứng dụng Watch Store hiện có sẳn trên Google play & App Store. Tải nó ngay</p><br>
+                                <img src="assets/img/img-googleplay.jpg" alt=""><br>
+                                <img src="assets/img/img-appstore.jpg" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div style="width: 100%; height: 1px; background-color: #fff;"></div>
+                <div>
+                    <span class="copyright" >Copyright © 2021 By<a href="https://www.facebook.com/profile.php?id=100025917969501"> Ho_Ngoc_Han</a></span>
+                </div>
+            </div>
+        </footer>
+
+        <!-- arrow-up -->
+
+        <a href=" #head" class="arrow-up">
+            <i class="fa fa-angle-up" aria-hidden="true"></i>
+        </a>
+    </main>
+
+    <script src="./assets/js/main.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+</body>
+</html>

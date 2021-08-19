@@ -1,0 +1,495 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" type="image/png" href="./assets/img/wristwatch.png"/>
+    <title>Sản phẩm - Watch Shop</title>
+
+    <!-- css -->
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/responsive.css">
+    <link rel="stylesheet" href="assets/css/product-detail.css">
+
+    <!-- library -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <link rel="stylesheet" href="./assets/fonts/fontawesome-free-5.15.3-web/css/all.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@500&display=swap" rel="stylesheet">
+</head>
+<body>
+    <main class="main">
+        <header class="header-subpages" id="head">
+            <div class="header__topbar">
+                <div class="grid wide">
+                    <div class="header__topbar__container">
+                        <div class="row">
+                            <div class="l-3 m-3 c-3">
+                                <div class="header__topbar__container--contacts" data-aos="fade-right" data-aos-delay="200">
+                                    <span>+84 355 176 940</span>
+                                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                                    <a href="#"><i class="fab fa-twitter"></i></a>
+                                    <a href="#"><i class="fa fa-instagram"></i></a>
+                                </div>
+                            </div>
+                            <div class="l-3 m-1 c-1">
+                                <ul class="header__topbar__container--register" data-aos="fade-left" data-aos-delay="200">
+                                    <a href="login-form.html">
+                                        <li>Login</li>
+                                    </a>   
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <nav class="header__nav">
+                <div class="header__nav__container">
+                    <div class="grid wide">
+                        <div class="row" data-aos="fade-up" data-aos-delay="200">   
+                            <div class="l-1 m-2 c-3">
+                                <label for="nav-mobile-input">
+                                    <i class="fa fa-bars list-tablet-mobile "  aria-hidden="true" ></i>
+                                </label>
+                                <a href="index.html" >
+                                    <div class="header__nav__container--logo" style="font-weight: 800;">
+                                        WATCH<span style="color: #fa9e1b;">SHOP</span>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="l-3 hide-on-tablet_mobile">
+                                <ul class="header__nav__container--list">
+                                    <li><a href="index.html">TRANG CHỦ</a></li>
+                                    <li >
+                                        <a href="introduce.html">GIỚI THIỆU</a>
+                                    </li>
+                                    <li  class="dropdown">
+                                        <a href="product.html">SẢM PHẨM</a>
+                                        <ul class="nav-dropdown">
+                                            <li><a href="#male">Đồng hồ nam</a></li>
+                                            <li><a href="#female">Đồng hồ nữ</a></li>
+                                            <li><a href="#couple">Đồng hồ đôi</a></li>
+                                            <li><a href="#accessories">Phụ kiện</a></li>                                  
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <a href="blogs.html">BLOGS</a>
+                                    </li>
+                                    <li><a href="contact.html">LIÊN HỆ</a></li>
+                                </ul>
+                            </div>                  
+                            <div class="l-1 m-2 c-1">
+                                <div class="header__nav__container--search">
+                                    <a href="cart.html"><i class="fas fa-shopping-cart header__nav-cart-icon"></i></a>
+                                    <i class="fas fa-search" id="search"></i><br>
+                                    <input type="text" placeholder="Search...">
+                                </div>
+                            </div>
+                            <input type="checkbox" hidden class="nav-input" id="nav-mobile-input">
+                            <label for="nav-mobile-input" class="overlay"></label>
+                            <div class="nav-mobile">
+                                <label for="nav-mobile-input" class="nav-mobile-close">
+                                    <i class="fa fa-times-circle" aria-hidden="true"></i>
+                                </label>
+                                <ul class="nav-mobile-list">
+                                    <li>
+                                        <a href="index.html" class="nav-mobile-link">Trang chủ</a>
+                                    </li>
+                                    <li>
+                                        <a href="introduce.html" class="nav-mobile-link">Giới thiệu</a>
+                                    </li>
+                                    <li>
+                                        <a href="#male" class="nav-mobile-link">Đồng hồ nam</a>
+                                    </li>
+                                    <li>
+                                        <a href="#female" class="nav-mobile-link">Đồng hồ nữ</a>
+                                    </li>
+                                    <li>
+                                        <a href="#couple" class="nav-mobile-link">Đồng hồ đôi</a>
+                                    </li>
+                                    <li>
+                                        <a href="#accessories" class="nav-mobile-link">Phụ kiện</a>
+                                    </li>
+                                    <li>
+                                        <a href="blogs.html" class="nav-mobile-link">Blogs</a>
+                                    </li>
+                                    <li>
+                                        <a href="contact.html" class="nav-mobile-link">Liên hệ</a>
+                                    </li>
+                                </ul>
+                            </div> 
+                        </div>
+                    </div>
+                </div>
+            </nav>           
+        </header>
+        <div class = "main-wrapper">
+            <div class = "container-productdetail">
+                <div class = "product-div">
+                    <div class = "product-div-left" data-aos="fade-right" data-aos-delay="100px" data-aos-duration="1000">
+                        <div class = "img-container">
+                            <img src = "assets/img/Product/DONGHONAM/3.jpg" alt = "watch">
+                        </div>
+                        <div class = "hover-container">
+                            <div><img src = "assets/img/Product/DONGHONAM/4.jpg"></div>
+                            <div><img src = "assets/img/Product/DONGHONAM/7.jpg"></div>
+                            <div><img src = "assets/img/Product/DONGHONAM/2.jpg"></div>
+                            <div><img src = "assets/img/Product/DONGHONAM/3.jpg"></div>
+                        </div>
+                    </div>
+                    <div class = "product-div-right" data-aos="fade-left" data-aos-delay="100px" data-aos-duration="1000">
+                        <span class = "product-name">ĐỒNG HỒ TISSOT T063.907.11.058.00 NAM TỰ ĐỘNG DÂY INOX</span>
+                        <span class = "product-price">1,195.300 đ</span>
+                        <div class = "product-rating">
+                            <span><i class = "fas fa-star"></i></span>
+                            <span><i class = "fas fa-star"></i></span>
+                            <span><i class = "fas fa-star"></i></span>
+                            <span><i class = "fas fa-star"></i></span>
+                            <span><i class = "fas fa-star-half-alt"></i></span>
+                            <span>(350 đánh giá)</span>
+                        </div>
+                        <p class = "product-description">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vitae animi ad minima veritatis dolore. Architecto facere dignissimos voluptate fugit ratione molestias quis quidem exercitationem voluptas.</p><br>
+                        <div class="product__main-info-cart-quantity" style="line-height: 1.7rem;">
+                            <p>Số lượng </p>
+                            <input type="number" step="1" min="1" max="999" value="1" class="product__main-info-cart-quantity-total">
+                        
+                        </div>
+                        <div class = "btn-groups">
+                            <button type = "button" class = "add-cart-btn"><i class = "fas fa-shopping-cart"></i>Thêm vào giỏ</button>
+                            <button type = "button" class = "buy-now-btn"><i class = "fas fa-wallet"></i>Mua ngay</button>
+                        </div>
+                    </div>
+                    <div class="information-product" data-aos="zoom-in" data-aos-delay="300" data-aos-duration="1000">
+                        <div>
+                            <h2>Mô tả sản phẩm</h2>
+                            <p style="font-weight: 18px;
+                            line-height: 1.6;
+                            font-weight: 300;
+                            opacity: 0.9;
+                            margin-top: 22px;">Mua đồng hồ tại WATCH SHOP bạn sẽ được tặng hộp đựng sang trọng (Rất thích hợp làm quà tặng). Đồng hồ có khả năng chống nước sinh hoạt tốt. Bảo hành máy 12 tháng. Vỏ máy bằng thép không gỉ cao cấp 904L chống Oxy hóa hiệu quả. Shop cam kết đồng hồ giống ảnh 100%. Có video và ảnh thật để xem thực tế. Trả hàng hoàn tiền trong 7 ngày nếu máy bị lỗi do nhà sản xuất.</p>
+                            <p style="font-weight: 18px;
+                            line-height: 1.6;
+                            font-weight: 300;
+                            opacity: 0.9;
+                            margin-top: 22px;">◈ THÔNG TIN NỔI BẬT: <br>
+
+                                ✔ Đồng hồ cơ máy chạy bền bỉ (shop tự tin và cam kết bảo hành máy 12 tháng)<br>
+                                
+                                ✔ Kiểu dáng năng động và lịch lãm (phong cách doanh nhân châu âu)<br>
+                                
+                                ✔ Chống nước sinh hoạt rất tốt + Mặt kính cường lực, chống trầy tốt<br>
+                                
+                                ✔ Vỏ làm bằng thép chất lượng nên đeo rất chắc tay và tuyệt đối không bị gỉ sét.<br>
+                                
+                                ✔ Cam kết giao sản phẩm 100% giống như hình ảnh và mô tả, có video thật do shop tự quay<br>
+                                -----------------------------------------------------------------------------------<br>
+                                ◈ THÔNG TIN SẢN PHẨM:<br>
+                                
+                                ✔ Đồng Hồ Cơ Nam Lộ Máy PAGINI Automatic PA19966<br>
+                                
+                                ✔ Thương Hiệu: TISSOT<br>
+                                
+                                ✔ Nguồn gốc: Nhật Bản<br>
+                                
+                                ✔ Kiểu Máy: Automatic<br>
+                                
+                                ✔ Kích thước mặt: 40mm<br>
+                                
+                                ✔ Độ dày: 15mm<br>
+                                
+                                ✔ Kích thước dây: 22mmv<br>
+                                
+                                ✔ Kiểu khóa: Khóa cài cao cấp<br>
+                                
+                                ✔ Chất Liệu Vỏ: Thép không gỉ cao cấp 904L<br>
+                                
+                                ✔ Chất Liệu Dây: Dây Inox cao cấp<br>
+                                
+                                ✔ Chất Liệu Kính: Kính cường lực chống trầy xước<br>
+                                
+                                ✔ Độ Chịu Nước: 30m<br>
+                                
+                                ✔ Bảo Hành 12 Tháng<br>
+                                
+                                ✔ Giới Tính : Nam<br>
+                                -----------------------------------------------------------------------------------<br>
+                                ◈ BỘ SẢN PHẨM GỒM:<br>
+                                
+                                ✔ Đồng hồ chính hãng<br>
+                                
+                                ✔ Túi và hộp đựng sang trọng<br>
+                                
+                                ✔ Khăn lau<br>
+                                
+                                ✔ Sách hướng dẫn<br>
+                                
+                                ✔ Thẻ tag, tem nhãn mác đồng hồ chính hãng<br>
+                                
+                                ✔ Quà tặng kèm nếu có (Lưu ý: Shop không bảo hành quà tặng)</p>
+                        </div>
+                    </div>
+                    <div class="review-product">
+                        <h2 data-aos="fade-left" data-aos-delay="300">Đánh giá từ khách hàng</h2>
+                        <article class="article-review" data-aos="fade-up" data-aos-delay="300">
+                            <div class="review" style="display: flex;">
+                                <img src="assets/img/khanh.jpg" alt="">
+                                <div >
+                                    <h3>Nguyễn Việt Khánh</h3>
+                                    <div class="star">
+                                        <i class="fa fa-star" aria-hidden="true"></i>
+                                        <i class="fa fa-star" aria-hidden="true"></i>
+                                        <i class="fa fa-star" aria-hidden="true"></i>
+                                        <i class="fa fa-star" aria-hidden="true"></i>
+                                        <i class="fa fa-star" aria-hidden="true"></i>
+                                    </div>
+                                    <ul class="date-product">  
+                                        <li>
+                                            <i class="fas fa-calendar-alt "></i>Aug 5, 2016
+                                        </li>                       
+                                    </ul>
+                                </div>   
+                            </div>
+                            <div class="review-content">
+                                <p>Sản phẩm rất chất lượng, giống như mô tả của shop, sẽ ủng hộ tiếp sau này</p>
+                            </div>
+                        </article>
+                        <article class="article-review" data-aos="fade-up" data-aos-delay="300">
+                            <div class="review" style="display: flex;">
+                                <img src="assets/img/tram.jpg" alt="">
+                                <div >
+                                    <h3>Nguyễn Minh Trâm</h3>
+                                    <div class="star">
+                                        <i class="fa fa-star" aria-hidden="true"></i>
+                                        <i class="fa fa-star" aria-hidden="true"></i>
+                                        <i class="fa fa-star" aria-hidden="true"></i>
+                                        <i class="fa fa-star" aria-hidden="true"></i>
+                                        <i class="fa fa-star" aria-hidden="true"></i>
+                                    </div>
+                                    <ul class="date-product">  
+                                        <li>
+                                            <i class="fas fa-calendar-alt "></i>Aug 5, 2016
+                                        </li>                       
+                                    </ul>
+                                </div>  
+                            </div>
+                            <div class="review-content">
+                                <p>Sản phẩm rất chất lượng, giống như mô tả của shop, sẽ ủng hộ tiếp sau này</p>
+                            </div>
+                        </article>
+                        <article class="article-review" data-aos="fade-up" data-aos-delay="300">
+                            <div class="review" style="display: flex;">
+                                <img src="assets/img/hung.jpg" alt="">
+                                <div >
+                                    <h3>Trần Văn Hưng</h3>
+                                    <div class="star">
+                                        <i class="fa fa-star" aria-hidden="true"></i>
+                                        <i class="fa fa-star" aria-hidden="true"></i>
+                                        <i class="fa fa-star" aria-hidden="true"></i>
+                                        <i class="fa fa-star" aria-hidden="true"></i>
+                                        <i class="fa fa-star" aria-hidden="true"></i>
+                                    </div>
+                                    <ul class="date-product">  
+                                        <li>
+                                            <i class="fas fa-calendar-alt "></i>Aug 5, 2016
+                                        </li>                       
+                                    </ul>
+                                </div>    
+                            </div>
+                            <div class="review-content">
+                                <p>Sản phẩm rất chất lượng, giống như mô tả của shop, sẽ ủng hộ tiếp sau này</p>
+                            </div>
+                        </article>
+                        <section>
+                            <div class="comment-product" data-aos="flip-up" data-aos-delay="300">
+                                <input type="text" placeholder="Để lại nhận xét">
+                                <button>Gửi nhận xét</button>
+                            </div>
+                            <div class="evaluate" data-aos="flip-up" data-aos-delay="300">
+                                <i class="fa fa-star-o " aria-hidden="true"></i>
+                                <i class="fa fa-star-o " aria-hidden="true"></i>
+                                <i class="fa fa-star-o " aria-hidden="true"></i>
+                                <i class="fa fa-star-o " aria-hidden="true"></i>
+                                <i class="fa fa-star-o " aria-hidden="true"></i><br>
+                                <button>Đánh giá sản phẩm</button>
+                            </div>
+                        </section>
+                    </div>
+                </div>
+                <div style="width: 100%; background-color: darkgrey; height: 1px; margin-bottom: 20px;"></div>
+                <div data-aos="fade-right" data-aos-delay="300" data-aos-duration="800">
+                    <div>
+                        <h2>SẢN PHẨM LIÊN QUAN</h2>
+                    </div>
+                    <div style="width: 100px; background-color: #fa9e1b; height: 3px; border-radius: 20px; margin-top: 10px;"></div>
+                </div>
+            </div>
+        </div>
+        <section class="content" id="male">
+            <article>
+                <div class="grid wide">
+                    <div class="row">
+                        <div class="col l-1 m-1 c-2">
+                            <a href="product-details.html">
+                                <div class="content-product" data-aos="fade-right">
+                                    <a href="">
+                                        <img src="./assets/img/Product/DONGHONAM/1.jpg" class="content-img" alt="">
+                                    </a>
+                                    <div class="content-classify">ĐỒNG HỒ NAM</div>
+                                    <div class="content-info">ĐỒNG HỒ LOUIS ERARD 13900AA05.BDC102 NAM PIN DÂY DA <a href=""></a></div>
+                                        
+                                    <div class="content-price">
+                                        <div class="content-price__present">523,103 ₫</div>
+                                        <div class="content-price__sale">342,420 ₫</div>
+                                    </div>
+                                    <div class="content-btn-shopping-bag">
+                                        <i class="fas fa-shopping-bag"></i>
+                                    </div>
+                                    <div class="content-persent">-10%</div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col l-1 m-1 c-2">
+                            <a href="product-details.html">
+                                <div class="content-product" data-aos="fade-right">
+                                <img src="./assets/img/Product/DONGHONAM/2.jpg" class="content-img" alt="">
+                                <div class="content-classify">ĐỒNG HỒ NAM</div>
+                                <div class="content-info">ĐỒNG HỒ CITIZEN AU1080-20A NAM ECO-DRIVE DÂY VẢI</div>
+                                <div class="content-price">
+                                    <div class="content-price__present">503,323 ₫</div>
+                                    <div class="content-price__sale">310,000 ₫</div>
+                                </div>
+                                <div class="content-btn-shopping-bag">
+                                    <i class="fas fa-shopping-bag"></i>
+                                </div>
+                                <div class="content-persent">-10%</div>
+                            </div>
+                            </a>
+                        </div>
+                        <div class="col l-1 m-1 c-2 ">
+                            <a href="product-details.html">
+                                <div class="content-product" data-aos="fade-left">
+                                    <img src="./assets/img/Product/DONGHONAM/3.jpg" class="content-img" alt="">
+                                    <div class="content-classify">ĐỒNG HỒ NAM</div>
+                                    <div class="content-info">ĐỒNG HỒ TISSOT T063.907.11.058.00 NAM TỰ ĐỘNG DÂY INOX</div>
+                                    <div class="content-price">
+                                        <div class="content-price__present">2,217,000 ₫</div>
+                                        <div class="content-price__sale">1,195,300 ₫</div>
+                                    </div>
+                                    <div class="content-btn-shopping-bag">
+                                        <i class="fas fa-shopping-bag"></i>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col l-1 m-1 c-2 ">
+                            <a href="product-details.html">
+                                <div class="content-product" data-aos="fade-left">
+                                    <img src="./assets/img/Product/DONGHONAM/4.jpg" class="content-img" alt="">
+                                    <div class="content-classify">ĐỒNG HỒ NAM</div>
+                                    <div class="content-info">ĐỒNG HỒ SEIKO SGEG99P1 NAM PIN DÂY DA</div>
+                                    <div class="content-price">
+                                        <div class="content-price__present">3,217,000 ₫</div>
+                                        <div class="content-price__sale">2,195,300 ₫</div>
+                                    </div>
+                                    <div class="content-btn-shopping-bag">
+                                        <i class="fas fa-shopping-bag"></i>
+                                    </div>
+                                    <div class="content-persent">-10%</div>
+                                </div>
+                            </a>
+                        </div>   
+                    </div>
+                </div>
+            </article>
+        </section>
+
+        <!-- Footer -->
+
+
+        <footer class="footer">
+            <div class="footer__container">
+                <div class="grid wide">
+                    <div class="row" >
+                        <div class="col l-1 m-2 c-2">
+                            <div class="footer__container__contact" data-aos="fade-up" data-aos-delay="100">
+                                <h2>Thông tin liên hệ</h2>
+                                <p style="color: #fff; line-height: 2rem;">
+                                    <i class="fa fa-map-marker" aria-hidden="true" style="color: #fa9e1b;"></i>
+                                    137 Nguyễn Thị Thập, Phường Hòa <br> Minh, Quận Liên Chiểu, TP Đà Nẵng <br>
+                                    <i class="fa fa-phone" aria-hidden="true" style="color: #fa9e1b;"></i>
+                                    0355176940 <br>
+                                    <i class="fa fa-envelope" aria-hidden="true" style="color: #fa9e1b;"></i>
+                                    hanhnpd04488@fpt.edu.vn <br>
+                                    <i class="fa fa-facebook-official" aria-hidden="true" style="color: #fa9e1b;"></i>
+                                    Hồ Ngọc Hân
+                                </p><br>
+                                <div class="btn-footer">
+                                    <button class="btn-footer" style="width: 40px; height: 40px; border-radius: 50px; background-color: #2d2c2c; border: 1px solid #fa9e1b;"><i class="fa fa-facebook" aria-hidden="true" style="color: #fa9e1b;"></i></button>
+                                    <button class="btn-footer" style="width: 40px; height: 40px; border-radius: 50px; background-color: #2d2c2c; border: 1px solid #fa9e1b; margin-left: 7px;"><i class="fa fa-google" aria-hidden="true" style="color: #fa9e1b;"></i></button>
+                                    <button class="btn-footer" style="width: 40px; height: 40px; border-radius: 50px; background-color: #2d2c2c; border: 1px solid #fa9e1b; margin-left: 7px;"><i class="fa fa-twitter" aria-hidden="true" style="color: #fa9e1b;"></i></button>
+                                    <button class="btn-footer" style="width: 40px; height: 40px; border-radius: 50px; background-color: #2d2c2c; border: 1px solid #fa9e1b; margin-left: 7px;"><i class="fa fa-instagram" aria-hidden="true" style="color: #fa9e1b;"></i></button>
+                                </div><br><br>          
+                            </div>
+                        </div>
+                        <div class="col l-1 m-2 c-2">
+                            <div class="footer__container__link" data-aos="fade-up" data-aos-delay="300">
+                                <h2>Liên kết</h2>
+                                <a href="introduce.html">Giới Thiệu</a><br>
+                                <a href="product.html">Sản phẩm</a><br>
+                                <a href="blogs.html">Blogs</a><br>
+                                <a href="contact.html">Liên hệ</a><br>
+                            </div>
+                        </div>
+                        <div class="col l-1 m-2 c-2">
+                            <div class="footer__container__support" data-aos="fade-up" data-aos-delay="500">
+                                <h2>Hỗ trợ</h2>
+                                <a href="#">Hướng dẫn mua hàng</a><br>
+                                <a href="#">Hướng dẫn thanh toán</a><br>
+                                <a href="#">Chính sách bảo hành</a><br>
+                                <a href="#">Chính sách đổi trả</a><br>
+                                <a href="#">Tư vấn khách hàng</a><br>     
+                            </div>
+                        </div>
+                        <div class="col l-1 m-2 c-2">
+                            <div class="footer__container__download" data-aos="fade-up" data-aos-delay="700">
+                                <h2>Tải ứng dụng trên</h2>
+                                <p>Ứng dụng Watch Store hiện có sẳn trên Google play & App Store. Tải nó ngay</p><br>
+                                <img src="assets/img/img-googleplay.jpg" alt=""><br>
+                                <img src="assets/img/img-appstore.jpg" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div style="width: 100%; height: 1px; background-color: #fff;"></div>
+                <div>
+                    <span class="copyright" >Copyright © 2021 By<a href="https://www.facebook.com/profile.php?id=100025917969501"> Ho_Ngoc_Han</a></span>
+                </div>
+            </div>
+        </footer>
+
+        <!-- arrow-up -->
+
+        <a href=" #head" class="arrow-up">
+            <i class="fa fa-angle-up" aria-hidden="true"></i>
+        </a>
+    </main>
+
+    <script src="./assets/js/main.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+</body>
+</html>
+
+
+
+
+
+
+
+

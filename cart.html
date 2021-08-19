@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" type="image/png" href="./assets/img/wristwatch.png"/>
+    <title>Giỏ hàng - Watch Shop</title>
+
+    <!-- css -->
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/responsive.css">
+    <link rel="stylesheet" href="assets/css/cart.css">
+
+    <!-- library -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <link rel="stylesheet" href="./assets/fonts/fontawesome-free-5.15.3-web/css/all.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@500&display=swap" rel="stylesheet">
+</head>
+<body>
+    <main class="main">
+        <header class="header-subpages" id="head">
+            <div class="header__topbar">
+                <div class="grid wide">
+                    <div class="header__topbar__container">
+                        <div class="row">
+                            <div class="l-3 m-3 c-3">
+                                <div class="header__topbar__container--contacts" data-aos="fade-right" data-aos-delay="200">
+                                    <span>+84 355 176 940</span>
+                                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                                    <a href="#"><i class="fab fa-twitter"></i></a>
+                                    <a href="#"><i class="fa fa-instagram"></i></a>
+                                </div>
+                            </div>
+                            <div class="l-3 m-1 c-1">
+                                <ul class="header__topbar__container--register" data-aos="fade-left" data-aos-delay="200">
+                                    <a href="login-form.html">
+                                        <li>Login</li>
+                                    </a>   
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <nav class="header__nav">
+                <div class="header__nav__container">
+                    <div class="grid wide">
+                        <div class="row" data-aos="fade-up" data-aos-delay="200">   
+                            <div class="l-1 m-2 c-3">
+                                <label for="nav-mobile-input">
+                                    <i class="fa fa-bars list-tablet-mobile "  aria-hidden="true" ></i>
+                                </label>
+                                <a href="index.html" >
+                                    <div class="header__nav__container--logo">     
+                                        WATCH<span style="color: #fa9e1b;">SHOP</span>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="l-3 hide-on-tablet_mobile">
+                                <ul class="header__nav__container--list">
+                                    <li><a href="index.html">TRANG CHỦ</a></li>
+                                    <li >
+                                        <a href="introduce.html">GIỚI THIỆU</a>
+                                    </li>
+                                    <li  class="dropdown">
+                                        <a href="product.html">SẢM PHẨM</a>
+                                        <ul class="nav-dropdown">
+                                            <li><a href="#male">Đồng hồ nam</a></li>
+                                            <li><a href="#female">Đồng hồ nữ</a></li>
+                                            <li><a href="#couple">Đồng hồ đôi</a></li>
+                                            <li><a href="#accessories">Phụ kiện</a></li>                                  
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <a href="blogs.html">BLOGS</a>
+                                    </li>
+                                    <li><a href="contact.html">LIÊN HỆ</a></li>
+                                </ul>
+                            </div>                  
+                            <div class="l-1 m-2 c-1">
+                                <div class="header__nav__container--search">
+                                    <a href="cart.html"><i class="fas fa-shopping-cart header__nav-cart-icon"></i></a>
+                                    <i class="fas fa-search" id="search"></i><br>
+                                    <input type="text" placeholder="Search...">
+                                </div>
+                            </div>
+                            <input type="checkbox" hidden class="nav-input" id="nav-mobile-input">
+                            <label for="nav-mobile-input" class="overlay"></label>
+                            <div class="nav-mobile">
+                                <label for="nav-mobile-input" class="nav-mobile-close">
+                                    <i class="fa fa-times-circle" aria-hidden="true"></i>
+                                </label>
+                                <ul class="nav-mobile-list">
+                                    <li>
+                                        <a href="index.html" class="nav-mobile-link">Trang chủ</a>
+                                    </li>
+                                    <li>
+                                        <a href="introduce.html" class="nav-mobile-link">Giới thiệu</a>
+                                    </li>
+                                    <li>
+                                        <a href="#male" class="nav-mobile-link">Đồng hồ nam</a>
+                                    </li>
+                                    <li>
+                                        <a href="#female" class="nav-mobile-link">Đồng hồ nữ</a>
+                                    </li>
+                                    <li>
+                                        <a href="#couple" class="nav-mobile-link">Đồng hồ đôi</a>
+                                    </li>
+                                    <li>
+                                        <a href="#accessories" class="nav-mobile-link">Phụ kiện</a>
+                                    </li>
+                                    <li>
+                                        <a href="blogs.html" class="nav-mobile-link">Blogs</a>
+                                    </li>
+                                    <li>
+                                        <a href="contact.html" class="nav-mobile-link">Liên hệ</a>
+                                    </li>
+                                </ul>
+                            </div> 
+                        </div>
+                    </div>
+                </div>
+            </nav>           
+        </header>
+        <div class="content-introduce">
+            <div data-aos="fade-up" data-aos-delay="100px" data-aos-time="1000">
+                <h3><a href="index.html">Trang chủ</a> <i class="fa fa-angle-double-right" aria-hidden="true"></i> <a href="#head" style="color: #fa9e1b;">Giỏ hàng</a></h3>
+            </div>
+        </div>
+        <div class="container-cart">
+            <div class="wrapper">
+                <div class="wrapper_content">
+                    <div class="header_title">
+                        <div class="title">
+                            GIỎ HÀNG CỦA TÔI :
+                        </div>
+                    </div>
+                    <div class="product_wrap">
+                        <div class="product_info">
+                            <div class="product_img">
+                                <img src="assets/img/Product/DONGHONAM/4.jpg" alt="ProductImage" width="200px" height="200px">
+                            </div>
+                            <div class="product_data">
+                                <div class="description">
+                                    <div class="main_header">
+                                        ĐỒNG HỒ LOUIS ERARD 13900AA05.BDC102 NAM PIN DÂY DA
+                                    </div>
+                                </div>
+                                <div class="qty">
+                                    <div class="size_select">
+                                        <p>Số lượng : <span>1</span></p>
+                                    </div>
+                                </div>
+                                <div class="price">
+                                    <div class="current_price">342,420 ₫</div>
+                                    <div class="normal_price">523,103 ₫</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product_btns">
+                            <div class="remove">XÓA</div>
+                            <div class="whishlist">TIẾP TỤC XEM SẢN PHẨM</div>
+                        </div>  
+                    </div>
+                     <div class="product_wrap">
+                        <div class="product_info">
+                            <div class="product_img">
+                                <img src="assets/img/Product/DONGHONU/7.jpg" alt="ProductImage" width="200px" height="200px">
+                            </div>
+                            <div class="product_data">
+                                <div class="description">
+                                    <div class="main_header">
+                                        ĐỒNG HỒ CASIO GA-100DE-2ADR NỮ PIN DÂY NHỰA
+                                    </div>
+                                </div>
+                                <div class="qty">
+                                    <div class="size_select">
+                                        <p>Số lượng : <span>1</span></p>
+                                    </div>
+                                </div>
+                                <div class="price">
+                                    <div class="current_price">8,195,300 ₫</div>
+                                    <div class="normal_price">9,217,000 ₫</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product_btns">
+                            <div class="remove">XÓA</div>
+                            <div class="whishlist">TIẾP TỤC XEM SẢN PHẨM</div>
+                        </div>
+                    </div>  
+                </div>
+                <div class="wrapper_amount">
+                    <div class="header_title">
+                        <div class="title">
+                            THÔNG TIN ĐƠN HÀNG:
+                        </div>    
+                    </div>
+                    <div class="price_details">
+                        <div class="item">
+                            <p>Tổng đơn đặt hàng :</p>
+                            <p>2</p>
+                        </div>
+                        <div class="item">
+                            <p>Giảm giá :</p>
+                            <p class="green">-1,202,383 đ</p>
+                        </div>
+                        <div class="item">
+                            <p>Phí vận chuyển :</p>
+                            <p><span style="text-decoration: line-through;"></span>30,000 đ </p>
+                        </div>
+                        <div class="coupon">
+                            <p>Mã giảm giá :</p>
+                            <p><a href="#">Áp dụng</a></p>
+                        </div>
+                        <div class="total">
+                            <p>Tổng tiền :</p>
+                            <p>8,537,720 đ</p>
+                        </div>
+                    </div>
+                    <div class="checkout">
+                        <a href="#" role="button" class="checkout_btn">Tiến hành đặt hàng</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+            
+
+        <!-- Footer -->
+
+
+        <footer class="footer">
+            <div class="footer__container">
+                <div class="grid wide">
+                    <div class="row" >
+                        <div class="col l-1 m-2 c-2">
+                            <div class="footer__container__contact" data-aos="fade-up" data-aos-delay="100">
+                                <h2>Thông tin liên hệ</h2>
+                                <p style="color: #fff; line-height: 2rem;">
+                                    <i class="fa fa-map-marker" aria-hidden="true" style="color: #fa9e1b;"></i>
+                                    137 Nguyễn Thị Thập, Phường Hòa <br> Minh, Quận Liên Chiểu, TP Đà Nẵng <br>
+                                    <i class="fa fa-phone" aria-hidden="true" style="color: #fa9e1b;"></i>
+                                    0355176940 <br>
+                                    <i class="fa fa-envelope" aria-hidden="true" style="color: #fa9e1b;"></i>
+                                    hanhnpd04488@fpt.edu.vn <br>
+                                    <i class="fa fa-facebook-official" aria-hidden="true" style="color: #fa9e1b;"></i>
+                                    Hồ Ngọc Hân
+                                </p><br>
+                                <div class="btn-footer">
+                                    <button class="btn-footer" style="width: 40px; height: 40px; border-radius: 50px; background-color: #2d2c2c; border: 1px solid #fa9e1b;"><i class="fa fa-facebook" aria-hidden="true" style="color: #fa9e1b;"></i></button>
+                                    <button class="btn-footer" style="width: 40px; height: 40px; border-radius: 50px; background-color: #2d2c2c; border: 1px solid #fa9e1b; margin-left: 7px;"><i class="fa fa-google" aria-hidden="true" style="color: #fa9e1b;"></i></button>
+                                    <button class="btn-footer" style="width: 40px; height: 40px; border-radius: 50px; background-color: #2d2c2c; border: 1px solid #fa9e1b; margin-left: 7px;"><i class="fa fa-twitter" aria-hidden="true" style="color: #fa9e1b;"></i></button>
+                                    <button class="btn-footer" style="width: 40px; height: 40px; border-radius: 50px; background-color: #2d2c2c; border: 1px solid #fa9e1b; margin-left: 7px;"><i class="fa fa-instagram" aria-hidden="true" style="color: #fa9e1b;"></i></button>
+                                </div><br><br>          
+                            </div>
+                        </div>
+                        <div class="col l-1 m-2 c-2">
+                            <div class="footer__container__link" data-aos="fade-up" data-aos-delay="300">
+                                <h2>Liên kết</h2>
+                                <a href="introduce.html">Giới Thiệu</a><br>
+                                <a href="product.html">Sản phẩm</a><br>
+                                <a href="blogs.html">Blogs</a><br>
+                                <a href="contact.html">Liên hệ</a><br>
+                            </div>
+                        </div>
+                        <div class="col l-1 m-2 c-2">
+                            <div class="footer__container__support" data-aos="fade-up" data-aos-delay="500">
+                                <h2>Hỗ trợ</h2>
+                                <a href="#">Hướng dẫn mua hàng</a><br>
+                                <a href="#">Hướng dẫn thanh toán</a><br>
+                                <a href="#">Chính sách bảo hành</a><br>
+                                <a href="#">Chính sách đổi trả</a><br>
+                                <a href="#">Tư vấn khách hàng</a><br>     
+                            </div>
+                        </div>
+                        <div class="col l-1 m-2 c-2">
+                            <div class="footer__container__download" data-aos="fade-up" data-aos-delay="700">
+                                <h2>Tải ứng dụng trên</h2>
+                                <p>Ứng dụng Watch Store hiện có sẳn trên Google play & App Store. Tải nó ngay</p><br>
+                                <img src="assets/img/img-googleplay.jpg" alt=""><br>
+                                <img src="assets/img/img-appstore.jpg" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div style="width: 100%; height: 1px; background-color: #fff;"></div>
+                <div>
+                    <span class="copyright" >Copyright © 2021 By<a href="https://www.facebook.com/profile.php?id=100025917969501"> Ho_Ngoc_Han</a></span>
+                </div>
+            </div>
+        </footer>
+
+        <!-- arrow-up -->
+
+        <a href=" #head" class="arrow-up">
+            <i class="fa fa-angle-up" aria-hidden="true"></i>
+        </a>
+    </main>
+
+    <script src="./assets/js/main.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
